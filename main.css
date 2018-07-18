@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 1.01%;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: 'Shadows Into Light', cursive;
+  color: blanchedalmond;
+  text-transform: uppercase;
+  background-image: url('https://wallpapermemory.com/uploads/727/boruto-naruto-the-movie-wallpaper-hd-1080p-327469.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.questions {
+  width: 100%;
+  padding-left: 1.1%;
+  padding-right: 1.1%;
+}
+
+.questions::before, .questions::after {
+  display: table;
+  content: '';
+}
+
+.questions::after {
+  clear:both;
+}
+
+.questionContainer {
+  width: 50%;
+  background-color: black;
+  opacity: 0.9;
+  object-fit: cover;
+  font-weight: bolder;
+  border-radius: 5%;
+  float: left;
+  line-height: 1;
+}
+.hideElement {
+  display: none;
+}
+
+.quizLegend{
+  color: black;
+  font-size: 4vw;
+  font-weight: bolder;
+}
+
+.img {
+  width: 90%;
+  object-fit: cover;
+}
+
+.answerImage {
+  width: 100%;
+}
+
+.heading {
+  font-size: 8vw;
+  text-shadow: 2px 2px 5px blanchedalmond;
+}
+
+.questionTitle {
+  text-shadow: 2px 2px 5px blanchedalmond;
+}
+.questionAsked {
+  background-color: none;
+}
+
+.answerBubbles {
+  text-align: left;
+  margin-top: 0%;
+  padding-top: 0%;
+}
+
+ul {
+  display: inline-block;
+  margin-left: 75%;
+  background-color: black;
+  opacity: 0.9;
+  font-size: 2vw;
+  border-radius: 50%;
+  width: 9.8vw;
+  height: 9.8vw;
+  text-align: center;
+}
+
+.error {
+  text-align: center;
+}
+
+.tracker {
+  text-align: center;
+}
+
+/*answer choices*/
+.answerOne:hover {
+  background-color: rgb(233, 194, 20);
+}
+
+.answerTwo:hover{
+  background-color: rgb(255, 153, 0);
+}
+
+.answerThree:hover{
+  background-color: rgba(231, 116, 21, 0.87);
+}
+
+.answerFour:hover{
+  background-color: rgba(240, 158, 64, 0.938);
+}
+
+h2 {
+  font: 4vw;
+}
+
+h1 {
+  text-align: left;
+  font: 6vw;
+  color: black;
+}
+
+/*buttons*/
+
+button {
+  background-color: blanchedalmond;
+  font: inherit;
+  font-weight: bolder;
+  border-radius: 10%;
+}
+
+button:focus, button:hover {
+  background-color:rgb(219, 155, 17);
+  transition-duration: .4s;
+  border-radius: 50%;
+}
+
+.submitButton,.nextButton, .restartButton {
+  width:100%;
+}
+
+@media only screen and (max-width: 640px) {
+  .questionContainer{
+    width: 100%;
+    height: 90%;
+    font-size: 4vw;
+  }
+  img {
+    width: 50%;
+  }
+  h1, h2 {
+    font-size: 4vw;
+  }
+  body {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 4vw;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+    body{
+      background-position: center -78%;
+      top: 23%;
+      position: absolute;
+    }
+}
